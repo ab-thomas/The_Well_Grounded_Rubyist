@@ -29,7 +29,6 @@ ticket = Object.new
     "The seat is #{ticket.seat}, " +
     "and it costs $#{"%.2f." % ticket.price}"
 
-    p Object.new.methods.sort
-
+   
 
 
