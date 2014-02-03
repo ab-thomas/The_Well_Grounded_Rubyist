@@ -1,9 +1,9 @@
 obj = Object.new
 
-# x variable assigned to an array of values corresponding
-  # to whatever arguments are sent.
-def obj.multi_arg(*x)
-  puts "I can take zero or more arguments!"
+def two_or_more(a,b,*c)
+  puts "I require two or more arguments!"
+  puts "And sure enough, i got: "
+  p a, b, c
 end
 
-obj.multi_arg(1,2,3)
+two_or_more(1,2,3,4,5)
