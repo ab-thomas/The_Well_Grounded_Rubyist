@@ -1,6 +1,7 @@
-
-def default_args(a,b,c=1)
-  puts "Values of variables: ",a,b,c
+# sponge parameters get lowest priority
+def mixed_args(a,b,*c,d)
+  puts "Arguments:"
+  p a,b,c,d
 end
 
-default_args(4,5,6)
+mixed_args(1,2,3,4,5)
