@@ -1,7 +1,9 @@
 obj = Object.new
 
-def obj.one_arg(x)
-  puts "I require one and only one argument!"
+# x variable assigned to an array of values corresponding
+  # to whatever arguments are sent.
+def obj.multi_arg(*x)
+  puts "I can take zero or more arguments!"
 end
 
-obj.one_arg(1,2,3)
+obj.multi_arg(1,2,3)
