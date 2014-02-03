@@ -1,3 +1,4 @@
+# every parameter end up bound to a value
 def arguments_unleashed(a,b=1,*c,d,e)
   puts "Arguments:"
   p a,b,c,d,e
