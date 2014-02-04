@@ -3,6 +3,6 @@ def change_string(str)
 end
 
 s = "Original string content!"
-change_string(s)
+change_string(s.dup)
 
-puts s # => New string content!
+puts s # => Original string content!
