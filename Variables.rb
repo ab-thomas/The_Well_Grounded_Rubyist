@@ -3,6 +3,6 @@ def change_string(str)
 end
 
 s = "Original string content!"
-change_string(s.dup)
+s.freeze
 
-puts s # => Original string content!
+change_string(s) # => RuntimeError: can't modify frozen string
