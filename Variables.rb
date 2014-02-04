@@ -1,14 +1,8 @@
-def say_goodbye
-  x = "Goodbye"
-  puts x
-end
+str = "Hello"
+abc = str
+str = "Goodbye"
+puts str
+puts abc 
 
-def start_here
-  x = "Hello"
-  puts x
-  say_goodbye
-  puts "Let's check whether x remainded the same:"
-  puts x
-end
-
-start_here
+# => Goodbye
+# => Hello
