@@ -12,7 +12,7 @@ class Ticket
     @date
   end
 
-  def set_price(amount)
+  def price=(amount) # setter method
     @price = amount
   end
 
@@ -22,9 +22,11 @@ class Ticket
 end
 
 ticket = Ticket.new("Town Hall", "11/12/13")
-ticket.set_price(63.00)
+# ticket.price: 'ticket' is the receiver and 'price' is the method
+# '63.00' is the single argument 
+ticket.price = 63.00 # syntactic sugar
 puts "The ticket cost $#{"%.2f" % ticket.price}."
-ticket.set_price(72.50)
+ticket.price = 72.50 # syntactic sugar
 puts "Whoops--it just went up. It now costs $#{"%.2f" % ticket.price}."
 
 
