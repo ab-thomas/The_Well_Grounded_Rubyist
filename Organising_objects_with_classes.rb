@@ -1,11 +1,15 @@
-class C
-  def m
-    puts "First definition of method m"
+class Person
+  def set_name(string)
+    puts "Setting person's name..."
+    @name = string
   end
 
-  def m
-    puts "Second definition of method m"
+  def get_name
+    puts "Returning the person's name..."
+    @name
   end
 end
 
-C.new.m 
+joe = Person.new
+joe.set_name("Joe")
+puts joe.get_name
