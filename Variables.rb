@@ -1,8 +1,8 @@
-str = "Hello"
-abc = str
-str = "Goodbye"
-puts str
-puts abc 
+def change_string(str)
+  str.replace("New string content!")
+end
 
-# => Goodbye
-# => Hello
+s = "Original string content!"
+change_string(s)
+
+puts s # => New string content!
