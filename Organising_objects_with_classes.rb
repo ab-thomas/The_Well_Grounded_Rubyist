@@ -1,16 +1,11 @@
-class Ticket
-  def price=(amount)
-    if (amount * 100).to_i == amount *100
-      @price = amount
-    else
-      puts "The price seems to be malformed"
+class TravelAgentSession
+  def year=(y)
+    @year = y.to_i
+    if @year < 100
+      @year = @year + 2000
     end
   end
+end 
 
-  def price
-    @price
-  end
-end
-
-s = Ticket.new
-s.price = 50.35
+month, day, year = date.split('/')
+self.year = year
