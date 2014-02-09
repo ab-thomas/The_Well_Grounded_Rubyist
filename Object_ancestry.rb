@@ -1,4 +1,5 @@
 class C
+  puts.inspect
 end
 
 class D < C

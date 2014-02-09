@@ -9,3 +9,8 @@ class Rubyist < Person
 
   david = Rubyist.new
   puts david.species
+
+
+  obj = Object.new # creates a new generic object 
+
+  
